@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>JS Functions</title>
+		<script>
+			function h1function(){ 
+			let txt1 = document.getElementById("h1change");
+			alert(txt1.value);
+			}
+			function changeStyle(){
+			let doc = document.getElementById("heading1");
+			doc.style.border = "solid";
+			doc.style.borderColor = "red";
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="heading1">Heading 1</h1>
+		<h3 id="heading3">Heading 3</h3>
+		<p id="p1">Paragraph</p>
+		<form>
+			<label> Change Heading 1: </label>
+			<input type="text" id="h1change">
+		</form>
+		<button type="button" onclick="h1function()">Change</button>
+		<button type="button" onclick="changeStyle()">Click Here</button>
+	</body>
+</html>
